@@ -1,13 +1,27 @@
 # PrototypeDesign.no
 
-Nettside for PrototypeDesign — CAD, 3D-print og prototyper i Telemark.
-
-## Domene
-
-Registrer `prototypedesign.no` på nytt hos Domeneshop med kontoen `ole.arvid.b@gmail.com`.
-Sak DS20170915110.
-
 ## GitHub Pages
 
-Settings → Pages → Source: Deploy from a branch → `main` / root.
-Da blir siden synlig på `https://ole-arvid.github.io/prototypedesign.no/` før eget domene peker hit.
+1. Repo → Settings → Pages
+2. Source: Deploy from a branch
+3. Branch: `main` / `/ (root)`
+4. Save. Custom domain skal vise `prototypedesign.no` (filen `CNAME`).
+5. Huk av Enforce HTTPS når sertifikatet er klart.
+
+## DNS hos Domeneshop
+
+Mine domener → prototypedesign.no → DNS-pekere → Vis avanserte innstillinger.
+
+Slett gamle A-pekere mot webhotell først.
+
+| Vertsnavn | Type | Data |
+|---|---|---|
+| *(tom)* | A | 185.199.108.153 |
+| *(tom)* | A | 185.199.109.153 |
+| *(tom)* | A | 185.199.110.153 |
+| *(tom)* | A | 185.199.111.153 |
+| *(tom)* | AAAA | 2606:50c0:8000::153 |
+| *(tom)* | AAAA | 2606:50c0:8001::153 |
+| *(tom)* | AAAA | 2606:50c0:8002::153 |
+| *(tom)* | AAAA | 2606:50c0:8003::153 |
+| www | CNAME | ole-arvid.github.io |
